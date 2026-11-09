@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: welpak-atlas-opencode_app_1
+      APP_PORT: 4096
+
+  app:
+    image: ghcr.io/anomalyco/opencode:1.19.5@sha256:f4cfe16d91efbbfca01a51c44094fba4cf82e15c7fa17de5f11f9059699b1e6e
+    command: ["serve", "--hostname", "0.0.0.0", "--port", "4096"]
+    restart: unless-stopped
+    user: "1000:1000"
+    environment:
+      HOME: /home/opencode
+    volumes:
+      - ${APP_DATA_DIR}/data/opencode:/home/opencode/
