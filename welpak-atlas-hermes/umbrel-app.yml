@@ -3,7 +3,7 @@ id: welpak-atlas-hermes
 category: ai
 name: Atlas Hermes
 icon: https://getumbrel.github.io/umbrel-apps-gallery/hermes-agent/icon.svg
-version: "0.22.5-patch.2"
+version: "0.23.1"
 tagline: Hermes Agent for Atlas, Brad Welsh's PA
 description: >-
   Hermes Agent is an AI agent that gets better the more you use it by creating its own skills, storing user preferences, and updating its memory.
@@ -39,8 +39,16 @@ path: "/chat"
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  This update keeps Hermes 0.22.5. Your agents, chats and settings carry over. It improves how agents use their browser when you chat with them in Murmur:
-    - An agent now types a password or code you give it in the chat.
-    - Agents find another way before asking you to take over their browser, and ask only for a step that needs you, like proving you're human.
+  This update moves to Hermes 0.23.1. Your agents, chats and settings carry over.
+
+
+  Key highlights:
+    - Plugins added to Hermes's catalog since your last update can be found and installed again.
+    - A chat can no longer get stuck refusing the same request over and over.
+    - Telegram, WhatsApp pairing and group chats work more reliably.
+    - Security and reliability fixes.
+
+
+  Full release notes can be found at https://github.com/NousResearch/hermes-agent/releases/tag/v0.23.1
 submitter: Welpak (mirror of official Umbrel app)
 submission: https://github.com/getumbrel/umbrel-apps/pull/5376
